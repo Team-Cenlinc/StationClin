@@ -1,5 +1,7 @@
 # StationXec
 
+## English Ver.
+
 ### Intro
 Platform Screen Door for Minecraft servers.
 
@@ -37,3 +39,7 @@ The 'Half Height' Doors are like this:
 And the 'Full Height Doors are like this:
 
 ![Station2.png](https://i.loli.net/2019/12/24/cEdvLWkVXAKf8Hm.png)
+
+### Some features will be introduced in following days.
+
+### If you find bugs, please upload your issues.
