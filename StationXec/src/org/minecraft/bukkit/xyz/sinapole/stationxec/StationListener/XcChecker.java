@@ -78,7 +78,7 @@ public class XcChecker implements Listener {
                                     plugin.getConfig().set(p.getName(), locXYZ);
                                     plugin.saveConfig();
                                 } else {
-                                    p.sendMessage(ChatColor.AQUA + "StationXec" + ChatColor.RED + " >>> You can not enter the station again.");
+                                    p.sendMessage(ChatColor.AQUA + "StationXec" + ChatColor.RED + " >>> You must enter a station first.");
                                 }
                             } else if (plugin.getConfig().contains(p.getName()) && plugin.getConfig().getString(p.getName()) != null) {
                                 String locXYZA = plugin.getConfig().getString(p.getName());
@@ -1388,33 +1388,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y > ys) {
@@ -1424,33 +1427,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y == ys) {
@@ -1460,33 +1466,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     }
@@ -1499,33 +1508,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y > ys) {
@@ -1535,33 +1547,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y == ys) {
@@ -1571,33 +1586,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     }
@@ -1610,33 +1628,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y > ys) {
@@ -1646,33 +1667,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     } else if (y == ys) {
@@ -1682,33 +1706,36 @@ public class XcChecker implements Listener {
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z > zs) {
                                             int resultz = z - zs;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         } else if (z == zs) {
                                             int resultz = 0;
                                             int result = resultx + resulty + resultz;
                                             int times = result / 100;
                                             if (times < 1) {
-                                                Main.econ.withdrawPlayer(p, 5);
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price);
+                                                String money = s.getLine(1);
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + money + " Dollars");
                                             } else {
-                                                Main.econ.withdrawPlayer(p, 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
-                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + 5 * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
+                                                Main.econ.withdrawPlayer(p, Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)));
+                                                p.sendMessage(ChatColor.AQUA + "StationXec >>> The journey fee is " + Price * Integer.parseInt(new java.text.DecimalFormat("0").format(times)) + " Dollars");
                                             }
                                         }
                                     }
