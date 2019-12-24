@@ -1,7 +1,7 @@
 # StationXec
 
 ## English Ver.
-Chinese version please click here -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
+For Chinese version please click here -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
 
 中文版请点此 -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
 
