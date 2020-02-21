@@ -1,0 +1,15 @@
+{
+    "latest": {
+        "spigotversion": "0.2.7"
+    },
+    "versions": {
+        "0.2.7": {
+            "spigot": {
+                "downloadUrl": "https://www.spigotmc.org/resources/stationxec.73705",
+                "directDownloadUrl": "#"
+            },
+            "changelog": [
+            ]
+        }
+    }
+}
