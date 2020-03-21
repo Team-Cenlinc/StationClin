@@ -24,7 +24,7 @@ Edit the sign like this:
 ![Sign00.png](https://i.loli.net/2019/12/24/5d3PaIvVKX2Jtbc.png)
 
 
-In the picture, the number in the second row can control how long the doors open, and the text in the third row tell the plugin what kind of doors you would like to use.
+In the picture, the number in the second row can control the time doors open, and the text in the third row tell the plugin what kind of doors you would like to use.
 
 When you place the sign, it will turn to this:
 
