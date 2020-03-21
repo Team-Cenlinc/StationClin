@@ -46,3 +46,10 @@ And the 'Full Height Doors are like this:
 ### Some features will be introduced in following days.
 
 ### If you find bugs, please upload your issues.
+
+# TODO List
+1. IC Card
+2. Auto Top-up Machine
+3. Various Language Support
+4. Non-gate Checker
+5. Thinking......
