@@ -1,6 +1,6 @@
 # StationXec
 
-## English Ver.
+## This page is in English.
 For Chinese version please click here -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
 
 中文版请点此 -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
@@ -8,7 +8,10 @@ For Chinese version please click here -> https://www.mcbbs.net/forum.php?mod=vie
 ### Intro
 Platform Screen Door for Minecraft servers.
 
-For 1.12.2 Spigot/Bukkit Servers.
+For 1.12.2 Spigot/Bukkit Servers
+
+The latest version: 0.2.8(Testing)
+The latest release version:0.2.6(R)
 
 ### What can StationXec provide?
 Platform Screen Doors(e.g. in metro stations)
