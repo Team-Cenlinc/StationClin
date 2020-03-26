@@ -2,4 +2,5 @@
 因为内部重构过多，需要时间。
 Todo List:
 1.可使用卡片（Will be added in 0.3.0)
-2.thinking....
+2.月卡
+3.thinking....
