@@ -1,4 +1,5 @@
 # StationXec
+### The current version in this repo is out of date! New release version will come out soon.
 
 ## This page is in English.
 For Chinese version please click here -> https://www.mcbbs.net/forum.php?mod=viewthread&tid=935172&page=1&extra=#pid15981949
