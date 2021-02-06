@@ -1,4 +1,4 @@
-# StationXec
+# StationClin
 ### The current version in this repo is out of date! New release version will come out soon.
 
 ## This page is in English.
