@@ -1,0 +1,41 @@
+# StationClin Plugin, By Sinapole(Acatine).
+# Special thanks to all players in Fetarute Server.
+# If have bugs, open an issue on https://github.com/Sinapole/StationClin.
+# OwO
+
+# Internal Settings
+#
+# DO NOT CHANGE THIS VALUE
+config_version: 1
+
+# Language Settings
+lang: en_US
+
+# Control if use card system
+# Default: true
+enable_card_system: true
+
+# Control if use Custom Turnstiles, if equals false, use default instead.
+# You can set barrier blocks, cost per 100 meter.
+# Default: true
+enable_custom_turnstiles: true
+
+# Control if use Custom Platform Screen Door, if equals false, use default instead.
+# You can set start & end blocks and door blocks.
+# Default: true
+enable_custom_platform_door: true
+
+# Currency Settings
+currency_unit_singular: Dollar
+currency_unit_plural: Dollars
+
+# Price Calculating Method (Distance/Stations):
+# Two values: d and s.
+#Default: d
+pricing_method: d
+
+# Unit of Distance Calculating(Use Number, Unit: Meter):
+unit: 100
+
+# Debug Mode
+debug_mode: true

@@ -1,0 +1,4 @@
+price_levels:
+  normal:
+    # Tips: The unit here can be changed by modifying config.yml
+    price_per_unit: 0.1
