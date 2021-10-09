@@ -1,0 +1,12 @@
+#Custom Platform Screen Door
+
+default:
+  # 3 Types: Straight, Curve, Auto.
+  type: straight
+  # Any block, please DO NOT use NUMBER ID.
+  door_block: minecraft:glass_panel
+  # For detecting, see more in.
+  start_block: minecraft:iron_block
+  end_block: minecraft:iron_block
+  edge_block_station: minecraft:quartz_block
+  edge_block_door: minecraft:yellow_wool
