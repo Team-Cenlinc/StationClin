@@ -10,7 +10,6 @@ public final class Files {
             int len;
             while ((len = in.read(buffer)) > 0) {
                 out.write(buffer, 0, len);
-                // System.out.write(buf, 0, len);
             }
             out.close();
             in.close();
