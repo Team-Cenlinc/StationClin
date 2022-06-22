@@ -1,9 +1,0 @@
-# Custom Turnstiles
-default:
-  type: close
-  always_open: false
-  barrier: minecraft:cobblestone_wall
-  cost_per_100_meters: 1.00
-
-
-
